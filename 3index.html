@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+        h1 { text-align: center; color: #1a5fb4; }
+        h2 { border-bottom: 2px solid #1a5fb4; padding-bottom: 4px; }
+
+        table { border-collapse: collapse; width: 100%; background: #fff; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #e8f0fe; width: 30%; }
+
+        li { margin-bottom: 20px; font-size: 18px; }
+        li img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-top: 8px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Video tự co giãn theo màn hình, tỉ lệ 16:9 */
+        .video-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin-top: 20px;
+        }
+        .video-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giới thiệu bản thân</h1>
+
+    <h2>Phần 1: Thông tin về mình</h2>
+    <table>
+        <tr><th>Họ và tên</th><td>Nguyễn Thành Trung</td></tr>
+        <tr><th>Ngày sinh</th><td>23/08/2009</td></tr>
+        <tr><th>Lớp</th><td>12A4 - THPT Hòn Gai</td></tr>
+    </table>
+
+    <h2>Phần 2: Sở thích</h2>
+    <ol>
+        <li>Chơi game
+            <img src="images/game.jpg" alt="Chơi game" loading="lazy">
+        </li>
+        <li>Nghe nhạc vào ban đêm khi mọi người đều ngủ
+            <img src="images/nhac.jpg" alt="Nghe nhạc" loading="lazy">
+        </li>
+        <li>Nghịch Teto
+            <img src="images/teto.jpg" alt="Teto" loading="lazy">
+        </li>
+        <li>Dịch truyện
+            <img src="images/truyen.jpg" alt="Dịch truyện" loading="lazy">
+        </li>
+    </ol>
+
+    <h2>Phần 3: Trường đại học mong muốn</h2>
+    <ul>
+        <li>Học viện Quân y</li>
+        <li>Y quốc gia</li>
+    </ul>
+
+    <div class="video-wrap">
+        <iframe
+            src="https://www.youtube.com/embed/LVO_StPK4jU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </div>
+</body>
+</html>
